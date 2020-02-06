@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<main>
+		<header>
+			<nav>
+				<div class="topleft">
+					<a href="#"><img src="img/pound-2461578_960_720.png" alt="емблема"></a>
+				</div>
+				<div class="topright">
+					<a href="#">HOME</a>
+					<a href="#">ABOUT</a>
+					<a href="#">CONTACT</a>
+				<a href="" id="menu" class="icon">&#9776;</a>
+				</div>
+			</nav>
+		</header>
+	<center>
+		<div class="content">
+			<form action="">
+                <div class="forms">
+                    <div class="selectcurrency">
+                        <label for="select">Дізнайтесь курс валют:</label>
+                        <br>
+                        <br>
+                        <select name="currency" id="currency">
+                        	<option value="">&nbsp;</option>
+                            <option value="USD">US Dollar</option>
+                            <option value="EUR">Euro</option>
+                            <option value="PLN">Zloty</option>
+                        </select>
+                   
+                    </div>
+                    <div class="date-select">
+                        <label for="dates">Виберіть дату:</label>
+                      
+                        <input type="date" name="date" id="cdate">
+         				<input type="date" name="date" id="bdate">
+                    </div>
+
+                </div>
+                <br>
+                <input type="button" id="search" value="Пошук">
+            </form>
+		</div>
+		<aside>
+   		 <div class="flex-container">
+   		 	<h4>Конвертер валют</h4>
+       		 <div class="flex-cell">
+           		<div class="flex-item"><span>з <select name="currency" id="currencyOne">
+                        	<option value="">&nbsp;</option>
+                        	<option value="UAH">UAH</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="PLN">PLN</option>
+                        </select><span> Сума </span><input type="text" name="" id="numberOne" value=""></span></div>
+        	</div>
+       		 <div class="flex-cell">
+            	<div class="flex-item"><span>в <select name="currency" id="currencyTwo">
+                        	<option value="">&nbsp;</option>
+                        	<option value="UAH">UAH</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="PLN">PLN</option>
+                        </select><span> Сума </span><input type="text" name="" id="numberTwo" value=""></span></div>
+        	</div>
+       
+        	<input type="button" id="exchange" value="Перевести">
+    </div>
+			<div class="currency">
+				<p ">Курс валют НБУ <span id="today"></span></p>
+				<p id="rateone">USD</p>
+				<p id="ratetwo">EURO</p>
+				<p id="ratetree">GRN</p>
+			</div>
+		</aside>
+<div id="container"></div>
+	</center>
+	</main>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

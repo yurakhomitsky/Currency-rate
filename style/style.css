@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+}
+header {
+  min-height: 100px;
+  width: 100%;
+  background-color: #41527a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+main {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  flex-wrap: wrap;
+}
+.topleft img {
+  padding: 9px 0px 0px 13px;
+  width: 80px;
+  height: 80px;
+}
+.topright {
+  display: block;
+  padding: 0px 0px 0px 47px;
+}
+nav .topright a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  margin-right: 20px;
+  letter-spacing: 1px;
+}
+
+.topright a:hover {
+  color: #010606;
+}
+center {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-around;
+  min-height: 150px;
+  background-color: #f1f1f1;
+}
+.content {
+  padding: 0px 0px 0px 0px;
+  height: 350px;
+  align-items: center;
+  display: flex;
+}
+aside {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  height: 350px;
+  flex-direction: column-reverse;
+}
+#search,
+#exchan {
+  background-color: #41527a;
+  color: white;
+  width: 280px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 15px;
+}
+#search:hover,
+#exchan:hover {
+  color: black;
+}
+
+select {
+  border: 1px solid #41527a;
+  width: 120px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+input {
+  border: 1px solid #41527a;
+  width: 80px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#cdate,
+#bdate {
+  border: 1px solid #41527a;
+  width: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 1px 0px 9px 0px;
+}
+.forms {
+  display: flex;
+}
+.date-select {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0px 0px 0px 0px;
+}
+.selectcurrency,
+.date-select {
+  margin: 0px 20px;
+}
+.currency {
+  display: table;
+}
+#currconvert {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  flex-wrap: wrap;
+}
+.flex-container {
+  display: flex;
+
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 52px 0px 36px 12px;
+}
+.flex-container .flex-cell .flex-item span {
+  font-size: 15px;
+  color: black;
+}
+.flex-cell {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.flex-item {
+  flex-grow: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  min-width: 310px;
+  max-width: 800px;
+  height: 400px;
+  width: 780px;
+  margin: 0 auto;
+}
